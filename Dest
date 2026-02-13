@@ -1,0 +1,19 @@
+name: I love to live in the UK
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+      - mike-actions
+
+  pull_request:
+    branches:
+      - main
+      - mike-actions
+
+jobs:
+  say_myname:
+    runs-on: ubuntu-lastest
+    steps:
+      - name: D-best 
+        run: echo "my name is best"
